@@ -1,0 +1,31 @@
+@import 'compass/reset';
+@import 'btn.scss';
+@import 'header.scss';
+@import 'content.scss';
+@import 'ft.scss';
+@import 'list.scss';
+
+body{
+    background: #fff;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+.clearfix{
+
+}
+
+.clearfix{*zoom:1;}
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+
+.fl{
+    float: left;
+}
+
+.rt{
+    float: right;
+}

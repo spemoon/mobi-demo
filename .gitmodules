@@ -1,0 +1,3 @@
+[submodule "public/js/mobi"]
+	path = public/js/mobi
+	url = git@github.com:spemoon/mobi.git

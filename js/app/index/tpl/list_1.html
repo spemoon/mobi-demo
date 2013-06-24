@@ -1,0 +1,24 @@
+{{for data=list item=item key=i}}
+<div class="list-item">
+    <div class="list-item-hd">
+        <h4><a href="{{item.url}}" target="_blank">{{item.title}}</a></h4>
+    </div>
+    <a href="{{item.url}}" class="img-box clearfix" target="_blank">
+        {{if(item.imgCount == 1)}}
+        <img src="{{item.imgList[0]}}" alt="" class="maxpic" />
+        {{else}}
+        {{for data=item.imgList item=img key=e}}
+        {{if(e % 3 === 2)}}
+        <img src="{{img}}" alt="" class="minpic noma" />
+        {{else}}
+        <img src="{{img}}" alt="" class="minpic" />
+        {{endif}}
+        {{endfor}}
+        {{endif}}
+    </a>
+    <div class="list-item-ft clearfix">
+        <a href="{{item.url}}" class="btn-1 rt" target="_blank">去看看</a>
+        <span class="tex">{{item.like}}&nbsp;人喜欢</span>
+    </div>
+</div>
+{{endfor}}
