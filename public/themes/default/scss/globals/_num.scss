@@ -1,5 +1,5 @@
 @mixin num {
-    background-image: url('../images/num.png');
+    background-image: url($imageUrl + 'num/num.png');
     background-repeat: no-repeat;
     width: 14px;
     height: 40px;
@@ -10,7 +10,7 @@
 .num {
     @include num;
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and ( min--moz-device-pixel-ratio: 1.5), only screen and ( -o-min-device-pixel-ratio: 3/2), only screen and ( min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi) {
-        background-image: url('../images/num@2x.png');
+        background-image: url($imageUrl + 'num/num@2x.png');
         background-size: 36px 79px;
     }
 }
