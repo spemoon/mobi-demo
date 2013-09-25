@@ -1,0 +1,69 @@
+@mixin num {
+    background-image: url('../images/num.png');
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 1px;
+    text-indent: -9999px;
+}
+.num {
+    @include num;
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and ( min--moz-device-pixel-ratio: 1.5), only screen and ( -o-min-device-pixel-ratio: 3/2), only screen and ( min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi) {
+        background-image: url('../images/num@2x.png');
+        background-size: 36px 79px;
+    }
+}
+.num-0 {
+    @include num;
+    background-position: 0 0;
+}
+.num-1 {
+    @include num;
+    background-position: -14px 0;
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and ( min--moz-device-pixel-ratio: 1.5), only screen and ( -o-min-device-pixel-ratio: 3/2), only screen and ( min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi) {
+        background-position: -36px 0;
+    }
+}
+.num-2 {
+    @include num;
+    background-position: -28px 0;
+}
+.num-3 {
+    @include num;
+    background-position: -42px 0;
+}
+.num-4 {
+    @include num;
+    background-position: -56px 0;
+}
+.num-5 {
+    @include num;
+    background-position: 0 -40px;
+}
+.num-6 {
+    @include num;
+    background-position: -14px -40px;
+}
+.num-7 {
+    @include num;
+    background-position: -28px -40px;
+}
+.num-8 {
+    @include num;
+    background-position: -42px -40px;
+}
+.num-9 {
+    @include num;
+    background-position: -56px -40px;
+}
+.num-w {
+    display: inline-block;
+    font-size: 50px;
+    vertical-align: middle;
+    margin: 0 0 0 4px !important;
+}
+.num-dot {
+    @include num;
+    background-position: -70px 0;
+}
